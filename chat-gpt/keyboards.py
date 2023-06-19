@@ -1,9 +1,6 @@
 from aiogram.types import (
-    ReplyKeyboardRemove,
     ReplyKeyboardMarkup,
     KeyboardButton,
-    InlineKeyboardMarkup,
-    InlineKeyboardButton,
 )
 """
 Описаны клавиатуры:
@@ -15,7 +12,7 @@ from aiogram.types import (
 main_menu_kb = [
     [
         KeyboardButton(text='Echo mode'),
-        KeyboardButton(text='GPT chat mode'),
+        # KeyboardButton(text='GPT chat mode'),
      ],
     [
         KeyboardButton(text='GPT QA mode'),
@@ -39,3 +36,4 @@ keyboard_back_main_menu = ReplyKeyboardMarkup(
     keyboard=back_main_menu_bk,
     resize_keyboard=True,
 )
+
